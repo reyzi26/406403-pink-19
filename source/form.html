@@ -31,8 +31,138 @@
     <section class="application">
       <h1 class="application__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-  </main>
 
+
+    <section class="profile-user">
+      <p class="profile-user__title">Поделитесь своей историей и получите шанс выиграть
+       ценный приз — 1000 миль на вашу бонусную карту!
+       Пожалуйста, заполните форму ниже:
+      </p>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="user-data">
+<!-- ВВОД ФИО -->
+
+        <section class="user-fullname">
+
+          <ul class="user-fullname__list">
+            <li class="user-fullname__item user-item">
+              <label class="user-item__title">Фамилия:</label>
+              <input type="text" class="user-item__text" placeholder="Укажите фамилию *">
+            </li>
+
+            <li class="user-fullname__item">
+              <label class="user-item__title">Имя:</label>
+              <input type="text" class="user-item__text" placeholder="Введите ваше имя *">
+            </li>
+
+            <li class="user-fullname__item">
+              <label class="user-item__title">Отчество:</label>
+              <input type="text" class="user-item__text" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+
+        </section>
+
+<!-- ВЫБОР ДОСТИЖЕНИЙ -->
+        <section class="user-achievements">
+          <p class="user-achievements__title">
+            Ваши безбашенные
+            достижения в путешествии
+          </p>
+
+          <ul class="user-achievements__list">
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text" checked>Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text" checked>Обгорел на пляже
+              </label>
+            </li>
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text">Видел Чака Норриса
+              </label>
+            </li>
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text">Накупил сувениров
+              </label>
+            </li>
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text" checked>Удержал башню
+              </label>
+            </li>
+            <li class="user-achievements__item user-progress">
+              <label>
+                <input type="checkbox" class="user-progress__text">Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </section>
+
+<!-- НОМЕР ТЕЛЕФОНА И ПОЧТЫ -->
+        <section class="contacts-user">
+          <ul class="contacts-user__list">
+            <li class="contacts-user__item user-info">
+              <label class="user-info__title">Номер телефона</label>
+              <input type="text" class="user-info__text" placeholder="Номер, пожалуйста">
+            </li>
+
+            <li class="contacts-user__item user-info">
+              <label class="user-info__title">Адрес почты</label>
+              <input type="text" class="user-info__text" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </section>
+
+
+<!-- ОПЕРАЦИОННЫЕ СИСТЕМЫ -->
+        <section class="programm-user">
+          <ul class="programm-user__list">
+            <li class="programm-user__item os-use">
+              <label>
+                <input class="os-use__user" type="radio" name="status" checked>
+                Pink для iOS
+              </label>
+            </li>
+
+            <li class="programm-user__item os-use">
+              <label>
+                <input class="os-use__user" type="radio" name="status">
+                Pink на Android
+              </label>
+            </li>
+
+            <li class="programm-user__item os-use">
+              <label>
+                <input class="os-use__user" type="radio" name="status">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <div class="emotional-commentary">
+            <p class="emotional-commentary__title">Опишите свои эмоции</p>
+
+            <textarea name="comment" id="comment"placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+
+        <button type="submit"class="button-form">Отправить форму</button>
+
+        <small class="legend-bottom">
+          <sup>*</sup> — обязательные поля
+        </small>
+
+      </form>
+    </section>
+
+
+  </main>
 
 
   <footer class="page-footer">
