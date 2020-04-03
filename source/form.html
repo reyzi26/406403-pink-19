@@ -28,11 +28,164 @@
   <main class="page-main">
 
 
-    <section class="application">
+    <div class="application">
       <h1 class="application__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </section>
-  </main>
+    </div>
 
+
+    <section class="profile-user">
+      <h2 class="visually-hidden">Учавствуй в конкурсе!</h2>
+
+      <p class="profile-user__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+      </p>
+<!-- БОЛЬШАЯ ФОРМА  -->
+      <form action="https://echo.htmlacademy.ru" method="post" class="user-data">
+<!-- ВВОД ФИО -->
+
+        <section class="user-fullname">
+          <h3 class="visually-hidden">Ввод Ф.И.О.</h3>
+
+          <ul class="user-fullname__list">
+            <li class="user-fullname__item user-item">
+              <label class="user-item__title">Фамилия:</label>
+              <input type="text" name="surname" class="user-item__text" required placeholder="Укажите фамилию *">
+            </li>
+
+            <li class="user-fullname__item user-item">
+              <label class="user-item__title">Имя:</label>
+              <input type="text" name="name" class="user-item__text" required placeholder="Введите ваше имя *">
+            </li>
+
+            <li class="user-fullname__item user-item">
+              <label class="user-item__title">Отчество:</label>
+              <input type="text" name="patronymic" class="user-item__text" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+
+        </section>
+
+<!-- ВЫБОР ДОСТИЖЕНИЙ -->
+        <section class="user-achievements">
+          <h3 class="visually-hidden">Выбор достижений</h3>
+
+          <p class="user-achievements__title">
+            Ваши безбашенные
+            достижения в путешествии
+          </p>
+
+          <ul class="user-achievements__list">
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_1" checked>
+                  Сделал селфи с акулой
+              </label>
+            </li>
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_2" checked>
+                  Обгорел на пляже
+              </label>
+            </li>
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_3">
+                  Видел Чака Норриса
+              </label>
+            </li>
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_4">
+                  Накупил сувениров
+              </label>
+            </li>
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_5" checked>
+                  Удержал башню
+              </label>
+            </li>
+
+            <li class="user-achievements__item">
+              <label class="checkbox-achievement">
+                <input type="checkbox" name="achievement_6">
+                  Разгромил отель
+              </label>
+            </li>
+          </ul>
+
+        </section>
+
+<!-- НОМЕР ТЕЛЕФОНА И ПОЧТЫ -->
+        <section class="contacts-user">
+          <h3 class="visually-hidden">Укажите свой номер телефона и почту</h3>
+          <ul class="contacts-user__list">
+            <li class="contacts-user__item user-info">
+              <label class="user-info__title">Номер телефона</label>
+              <input type="tel" name="number" class="user-info__text" placeholder="Номер, пожалуйста">
+            </li>
+
+            <li class="contacts-user__item user-info">
+              <label class="user-info__title">Адрес почты</label>
+              <input type="email" name="email" class="user-info__text" required placeholder="Введите почту *">
+            </li>
+          </ul>
+        </section>
+
+
+<!-- ОПЕРАЦИОННЫЕ СИСТЕМЫ -->
+        <section class="programm-user">
+          <h3 class="visually-hidden">Какое приложение используете?</h3>
+          <ul class="programm-user__list">
+            <li>
+              <label class="programm-user__item os-use">
+                <input class="os-use__user" type="radio" name="status" value="os-ios" checked>
+                Pink для iOS
+              </label>
+            </li>
+
+            <li>
+              <label class="programm-user__item os-use">
+                <input class="os-use__user" type="radio" name="status" value="os-android">
+                Pink на Android
+              </label>
+            </li>
+
+            <li>
+              <label class="programm-user__item os-use">
+                <input class="os-use__user" type="radio" name="status" value="os-windows">
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <div class="emotional-commentary">
+
+
+            <label class="emotional-commentary__title">
+              Опишите свои эмоции
+              <textarea name="comment" class="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </label>
+
+
+        </div>
+
+        <button type="submit" class="user-data__button-form">Отправить форму</button>
+
+        <small class="user-data__legend">
+          <sup>*</sup> — обязательные поля
+        </small>
+
+      </form>
+    </section>
+
+
+  </main>
 
 
   <footer class="page-footer">
