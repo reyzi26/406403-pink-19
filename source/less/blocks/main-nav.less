@@ -1,31 +1,31 @@
 .main-nav {
-  background-color: #283645;
+  background-color: @blue-color;
+}
 
-  &__wrapper {
-    text-transform: uppercase;
-    font-size: 18px;
-  }
+.main-nav__wrapper {
+  text-transform: uppercase;
+  font-size: 18px;
+}
 
-  &__list {
-    list-style: none;
-    color: #ffffff;
-  }
+.main-nav__list {
+  list-style: none;
+  color: @white-color;
 }
 
 .site-list {
-  box-shadow: 0 1px 0 #000000;
+  box-shadow: 0 1px 0 @black-color;
 
   &:hover {
-    color: #d22856;
+    color: @color-darkpink;
   }
+}
 
-  &__item {
-    padding: 26px 88px 24px 89px;
-    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+.site-list__item {
+  padding: 26px 88px 24px 89px;
+  box-shadow: 0 1px 0 @black-color, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
-    &--active {
-      color: #ffffff;
-      border-bottom: 1px solid #ffffff;
-    }
+  &--active {
+    color: @white-color;
+    border-bottom: 1px solid @white-color;
   }
 }
