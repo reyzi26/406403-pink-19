@@ -1,0 +1,54 @@
+.post-photo__title {
+  color: @blue-color;
+  font-size: 14px;
+}
+
+.post-photo__functions {
+  background-color: @whitesmoke-color;
+  margin-top: 48px;
+}
+
+.post-photo__user {
+  margin-top: 20px;
+  margin-left: 18px;
+}
+
+.post-photo__button {
+  border-radius: 100px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+
+  &--post {
+    color: @color-darkpink;
+    border: 3px solid @color-darkpink;
+    padding: 20px 91px;
+
+    &:hover {
+      color: @white-color;
+      background-color: @color-darkpink;
+    }
+
+    &:active {
+      color: @blush-color;
+    }
+  }
+
+  &--cancel {
+    opacity: 0.1;
+    color: @blue-color;
+    padding: 20px 105px;
+    border: 3px solid @blue-color;
+
+    &:hover {
+      border: 3px solid @blue-color;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: #c8ccce;
+      border: 3px solid @blue-color;
+      background-color: @blue-color;
+    }
+  }
+}
