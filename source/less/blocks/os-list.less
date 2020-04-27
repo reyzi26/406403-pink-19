@@ -1,14 +1,17 @@
 .os-list {
   list-style: none;
-  margin-top: 28px;
-  background-color: @darkblue;
+  height: 270px;
+  display: flex;
+  flex-direction: row;
 }
 
 .os-list__app {
   background-repeat: no-repeat;
-  width: 47px;
-  height: 56px;
-  display: block;
+  min-width: 47px;
+  min-height: 56px;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
 
   &--apple {
     background-image: url("../img/logo-apple.svg");
