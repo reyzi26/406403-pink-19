@@ -10,22 +10,22 @@
   <body>
 
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-              <img class="page-header__logo-image" alt="Логотип Пинк" src="img/logo-pink-white-mobile.svg" width="75"
-        height="22">
-      </a>
-      <button class="menu-button" type="button">Открыть меню</button>
-
-      <nav class="main-nav">
-
+      <nav class="page-header__nav main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          </ul>
+          <a href="#" class="page-header__logo">
+            <img class="page-header__logo-image" alt="Логотип Пинк" src="img/logo-pink-white-mobile.svg" width="75"
+            height="22">
+          </a>
+          <button class="main-nav__button" type="button">Открыть меню</button>
         </div>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+
       </nav>
 
     </header>
@@ -35,17 +35,21 @@
 
 
         <section class="application">
+
           <h2 class="visually-hidden">Мобильное приложение "Pink"</h2>
           <p class="application__title">Взгляните на жизнь иначе!</p>
-          <img src="img/iphone-hand-mobile@1x.png" alt="Телефон в руке" class="application__image" width = "254" height = "314">
-          <a href="#" class="application__button">Скачать приложение</a>
-          <ul class="application__icon-list os-list">
-              <li><a href="#" class="os-list__app os-list__app--apple">Ios</a></li>
-              <li><a href="#" class="os-list__app os-list__app--android">Android</a></li>
-              <li><a href="#" class="os-list__app os-list__app--windows">Windows</a></li>
-          </ul>
 
-          <p class="application__subtitle">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          <div class="application__wrapper">
+            <a href="#" class="application__button">Скачать приложение</a>
+            <ul class="application__icon-list os-list">
+              <li><a href="#" class="os-list__app os-list__app--apple"><span class="visually-hidden">Ios</span></a></li>
+              <li><a href="#" class="os-list__app os-list__app--android"><span class="visually-hidden">Android</span></a></li>
+              <li><a href="#" class="os-list__app os-list__app--windows"><span class="visually-hidden">Windows</span></a></li>
+            </ul>
+
+            <p class="application__subtitle">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          </div>
+
         </section>
 
 
