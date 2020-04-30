@@ -1,13 +1,20 @@
 .contacts {
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 250px;
 }
 
 .contacts__question {
   color: @blue-color;
+  font-weight: 300;
 }
 
 .contacts__title-phone {
   font-size: 18px;
+  margin-top: 28px;
 }
 
 .contacts__phone {
@@ -16,6 +23,7 @@
 
 .contacts__title-mail {
   font-size: 18px;
+  margin-top: 28px;
 }
 
 .contacts__mail {
@@ -24,8 +32,24 @@
 
 .contacts__title-address {
   font-size: 18px;
+  margin-top: 28px;
 }
 
 .contacts__address-mobile {
   color: @color-darkpink;
+  padding-bottom: 40px;
+}
+
+.footer-map { /* Проблема с адаптивностью карты + как её обрезать? */
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 260px;
+  background-size: 100% 100%;
+  margin-top: 40px;
+
+  @media (min-width: 640px) {
+    min-width: 640px;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+  }
 }

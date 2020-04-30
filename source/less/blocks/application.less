@@ -2,16 +2,25 @@
   background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto, cover;
-  background-position: 55% 90px , 50% 50%;
+  background-position: 40% 90px, 50% 50%;
   min-width: 320px;
 
   @media screen and (min-width: 660px) {
     padding: 100px 0;
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: calc(50% + 120px) 100%, 50% 50%;
+    background-position: calc(50% + 10px) 100%, 50% 50%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 100px 0;
+    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: calc(50% + 100px) calc(50% + 105px), 50% 50%;
+    min-height: 745px;
+    padding-right: 200px;
   }
 }
-.application__wrapper{
+
+.application__wrapper {
   margin-top: 286px;
   background-color: @darkblue;
   padding: 10px;
@@ -23,13 +32,18 @@
     padding-right: 340px;
     background-color: transparent;
   }
+
+  @media screen and (min-width: 1000px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .application__title {
   color: @white-color;
   font-size: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
+  font-weight: 300; /* Не работает подключение */
   margin-bottom: 33px;
   margin-top: 0;
   margin-left: auto;
@@ -41,6 +55,8 @@
   @media screen and (min-width: 660px) {
     max-width: 660px;
     padding-right: 340px;
+    font-size: 40px;
+    font-weight: 300;
   }
 }
 
@@ -49,7 +65,7 @@
   border: 3px solid @white-color;
   font-size: 21px;
   color: @white-color;
-  padding: 20px 40px;
+  padding: 20px 32px;
   border-radius: 100px;
   text-align: center;
   font-weight: 700;
@@ -71,15 +87,30 @@
   @media screen and (min-width: 660px) {
     font-size: 18px;
   }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 21px;
+    width: 315px;
+  }
 }
 
 .application__subtitle {
   font-size: 14px;
   color: @white-color;
   max-width: 320px;
+  font-weight: 300;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  @media screen and (min-width: 660px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 21px;
+    margin-top: 60px;
+  }
 }
 
 .application__icon-list {
