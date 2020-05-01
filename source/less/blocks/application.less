@@ -14,14 +14,23 @@
   @media screen and (min-width: 1000px) {
     padding: 100px 0;
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: calc(50% + 100px) calc(50% + 105px), 50% 50%;
+    background-position: calc(50% + 100px) calc(50% + 115px), 50% 50%;
     min-height: 745px;
     padding-right: 200px;
+  }
+
+  &--form {
+    background-image: none, url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: 0, 50% 50%;
+    min-height: 170px;
+    padding-top: 20px;
   }
 }
 
 .application__wrapper {
-  margin-top: 286px;
+  margin-top: 290px;
   background-color: @darkblue;
   padding: 10px;
 
@@ -42,8 +51,7 @@
 .application__title {
   color: @white-color;
   font-size: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300; /* Не работает подключение */
+  font-weight: 300;
   margin-bottom: 33px;
   margin-top: 0;
   margin-left: auto;
@@ -53,26 +61,32 @@
   text-align: center;
 
   @media screen and (min-width: 660px) {
-    max-width: 660px;
+    max-width: 550px;
     padding-right: 340px;
     font-size: 40px;
-    font-weight: 300;
+  }
+}
+
+.form-title {
+  @media screen and (min-width: 660px) {
+    font-size: 50px;
+    padding: 80px 0;
   }
 }
 
 .application__button {
   display: block;
   border: 3px solid @white-color;
-  font-size: 21px;
+  font-size: 18px;
   color: @white-color;
-  padding: 20px 32px;
+  padding: 20px 28px;
   border-radius: 100px;
   text-align: center;
   font-weight: 700;
-  margin-top: 28px;
+  margin: 0 auto;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 300px;
+  margin-top: 20px;
 
   &:hover {
     color: @color-darkpink;
@@ -86,6 +100,7 @@
 
   @media screen and (min-width: 660px) {
     font-size: 18px;
+    padding-top: 25px;
   }
 
   @media screen and (min-width: 1000px) {

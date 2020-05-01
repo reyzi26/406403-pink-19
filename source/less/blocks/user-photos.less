@@ -1,9 +1,25 @@
-.user-photos {
-  &__title {
-    font-size: 14px;
-    font-weight: 400;
-    color: @blue-color;
-    margin-bottom: 56px;
-    margin-top: 54px;
+.user-photos__title {
+  font-size: 14px;
+  font-weight: 400;
+  color: @blue-color;
+  text-align: center;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 30px;
+
+  @media screen and (min-width: 660px) {
+    font-size: 18px;
+    width: 500px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    line-height: 30px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 600px;
+    line-height: 30px;
   }
 }

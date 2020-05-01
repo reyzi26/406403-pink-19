@@ -2,6 +2,10 @@
   background-color: #ffffff;
   padding-bottom: 50px; /* Значение для сетки */
   padding-top: 50px;  /* Значение для сетки */
+
+  @media screen and (min-width: 660px) {
+    min-height: 140px;
+  }
 }
 
 .offer__question {
@@ -9,10 +13,35 @@
   margin: 0 auto;
   font-size: 24px;
   text-align: center;
+  width: 210px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 660px) {
+    width: 650px;
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    min-width: 800px;
+    font-size: 50px;
+  }
 }
 
 .offer__exclamation {
   color: @blue-color;
   font-size: 24px;
   text-align: center;
+  margin: 0 auto;
+  width: 210px;
+
+  @media screen and (min-width: 660px) {
+    min-width: 400px;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    min-width: 600px;
+    font-size: 50px;
+  }
 }
