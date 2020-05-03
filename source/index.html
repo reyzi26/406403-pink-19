@@ -34,10 +34,10 @@
         <h1 class="visually-hidden">Приложение "Pink" - взгляни на жизнь другими красками</h1>
 
 
-        <section class="application">
+        <section class="application"><!--  На планшете рука значительно ниже левого блока (как исправить?) -->
 
           <h2 class="visually-hidden">Мобильное приложение "Pink"</h2>
-          <p class="application__title">Взгляните на жизнь иначе!</p> <!-- Не работает подключение жирность текста -->
+          <p class="application__title">Взгляните на жизнь иначе!</p>
 
           <div class="application__wrapper">
             <a href="#" class="application__button">Скачать приложение</a>
@@ -55,14 +55,14 @@
 
 
         <section class="advantages">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2> <!-- В десктопной версии кривое позиционирование телефона и описания под ним! Не получается выровнять -->
           <div class="offer">
               <p class="offer__question">Устали от серости мегаполиса?</p>
               <p class="offer__exclamation">Нам есть, что вам предложить!</p>
           </div>
 
 
-            <ul class="advantages__list"> <!-- Проблема с телефонами и текстом(слиплось) -->
+            <ul class="advantages__list">
               <li class="advantages__item--gray-screen">
                 <h3 class="advantages__title">
                   Поднимает настроение
@@ -90,6 +90,28 @@
                 </p>
               </li>
             </ul>
+
+        </section>
+
+        <section class="positive-effect">
+          <h2 class="visually-hidden">Положительный эффект от нашего приложения!</h2>
+          <div class="positive-effect__img"></div>
+
+          <div class="possitive-effect__box">
+            <h3 class="positive-effect__title">
+              Эффект
+              на 24 часа!
+            </h3>
+
+            <div class="positive-effect__text">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+            </div>
+
+            <a href="#" class="positive-effect__info">Узнать больше об исследовании</a>
+          </div>
 
         </section>
 
@@ -183,35 +205,50 @@
     <footer class="page-footer">
 
       <div class="page-footer__contacts contacts">
+
         <p class="contacts__question">
           Остались вопросы?<br>
           Свяжитесь с нами!
         </p>
-        <b class="contacts__title-phone">
-          Звоните:
-        </b>
-        <a href="tel:+78125556666" class="contacts__phone">
-          <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
-        </a>
 
-        <b class="contacts__title-mail">
-          Пишите:
-        </b>
-        <a href="mail:mail@htmlacademy.ru" class="contacts__mail">
-          <span class="contacts__mail-mobile">mail@htmlacademy.ru</span>
-        </a>
+        <div class="contacts__box">
+          <div class="contacts__box--element">
+            <b class="contacts__title-phone">
+              Звоните:
+            </b>
+            <a href="tel:+78125556666" class="contacts__phone">
+              <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
+            </a>
+          </div>
 
-        <b class="contacts__title-address">
-          Приезжайте в гости:
-        </b>
-        <a href="Адрес:ул. Большая Конюшенная, 19/8" class="contacts__address">
-          <span class="contacts__address-mobile">ул. Большая Конюшенная, 19/8</span>
-        </a>
+          <div class="contacts__box--element">
+            <b class="contacts__title-mail">
+              Пишите:
+            </b>
+            <a href="mail:mail@htmlacademy.ru" class="contacts__mail">
+              <span class="contacts__mail-mobile">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+
+          <div class="contacts__box--element">
+            <b class="contacts__title-address">
+              Приезжайте в гости:
+            </b>
+            <a href="Адрес:ул. Большая Конюшенная, 19/8" class="contacts__address">
+              <span class="contacts__address-mobile">ул. Большая Конюшенная, 19/8</span>
+            </a>
+          </div>
+
+        </div>
+
+
+        </div>
+
 
         <div class="contacts__map">
         </div>
 
-      </div>
+
 
 
       <div class="page-footer__wrapper--index">

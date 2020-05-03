@@ -5,23 +5,84 @@
   text-align: center;
 }
 
+.contacts__box {
+  display: flex;
+  min-width: 300px;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 550px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  &--element {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: @tablet-width) {
+      flex-basis: 275px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.contacts__box div:nth-child(2) {
+  @media screen and (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
 .contacts__question {
   color: @blue-color;
   font-weight: 300;
+  font-size: 24px;
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .contacts__title-phone {
   font-size: 18px;
-  margin-top: 28px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__phone {
   color: @color-darkpink;
+  padding-bottom: 28px;
 }
 
 .contacts__title-mail {
   font-size: 18px;
-  margin-top: 28px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__mail {
@@ -31,6 +92,16 @@
 .contacts__title-address {
   font-size: 18px;
   margin-top: 28px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-top: 0;
+    padding: 0;
+  }
 }
 
 .contacts__address-mobile {
@@ -43,17 +114,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  text-align: center;
   min-width: 320px;
   min-height: 600px;
   margin-top: 40px;
 
-  @media (min-width: 640px) {
-    min-width: 640px;
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
     background-image: url("../../img/bg-map-tablet@1x.jpg");
   }
 
-  @media (min-width: 1000px) {
-    min-width: 1000px;
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
     background-image: url("../../img/bg-map-desktop@1x.jpg");
   }
 }

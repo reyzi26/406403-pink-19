@@ -3,7 +3,7 @@
   padding-bottom: 50px; /* Значение для сетки */
   padding-top: 50px;  /* Значение для сетки */
 
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: @tablet-width) {
     min-height: 140px;
   }
 }
@@ -16,13 +16,13 @@
   width: 210px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: @tablet-width) {
     width: 650px;
     margin-bottom: 0;
     font-size: 40px;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: @desktop-width) {
     min-width: 800px;
     font-size: 50px;
   }
@@ -35,12 +35,12 @@
   margin: 0 auto;
   width: 210px;
 
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: @tablet-width) {
     min-width: 400px;
     font-size: 40px;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: @desktop-width) {
     min-width: 600px;
     font-size: 50px;
   }

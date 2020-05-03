@@ -1,0 +1,84 @@
+.positive-effect {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: none;
+
+  @media screen and (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    width: 610px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    background-color: @whitesmoke-color;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    justify-content: center;
+  }
+}
+
+.positive-effect__title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 26px;
+  width: 170px;
+
+  @media screen and (min-width: @desktop-width) {
+    min-width: 350px;
+  }
+}
+
+.positive-effect__text {
+  font-size: 14px;
+  color: #283645;
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.positive-effect__info {
+  color: #d22856;
+  line-height: 24px;
+  text-decoration: underline;
+  margin-top: 18px;
+}
+
+.possitive-effect__box {
+  @media screen and (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 520px;
+  }
+}
+
+.positive-effect__img { /* Временные параметры для сетки */
+  @media screen and (min-width: @tablet-width) {
+    display: block;
+    min-width: 238px;
+    height: 276px;
+    background-color: black;
+    margin-right: 70px;
+    margin-left: 25px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    min-width: 250px;
+  }
+}

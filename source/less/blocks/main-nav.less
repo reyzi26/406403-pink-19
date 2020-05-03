@@ -1,7 +1,7 @@
 .main-nav {
   background-color: @blue-color;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -14,11 +14,11 @@
   margin: 0 auto;
   padding: 22px 20px;
 
-  @media screen and (min-width: 660px) {
-    width: 660px;
+  @media screen and (min-width: @tablet-width) {
+    width: @tablet-width;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: @desktop-width) {
     width: auto;
     margin: 0;
   }
@@ -32,7 +32,7 @@
 }
 
 .main-nav__button {
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: @desktop-width) {
     display: none;
   }
 }
