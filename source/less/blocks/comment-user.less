@@ -1,6 +1,10 @@
 .comment-user {
   background-color: #f2f2f2;
   padding-left: 15px;
+
+  @media screen and (min-width: @tablet-width) {
+    min-height: 190px;
+  }
 }
 
 .comment-user__name {
@@ -16,16 +20,19 @@
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: "Open Sans Light", "Arial", sans-serif;
 }
 
 .comment-user__text {
   color: @blue-color;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 90%;
+  }
 }
 
 .comment-user__like {
   font-size: 12px;
   text-transform: uppercase;
   color: @color-darkpink;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
