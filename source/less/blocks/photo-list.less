@@ -1,7 +1,83 @@
 .photo-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 660px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 1260px;
+  }
 }
 
 .photo-list__user {
-  display: block;
+  width: 100%;
+  display: flex;
+  vertical-align: middle;
+  text-shadow: none;
+  color: transparent;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: @tablet-width) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+.photo-list__item {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 300px;
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.photo-list__item--best {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.photo-list__comment {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: @tablet-width) {
+    max-width: 630px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    max-width: 940px;
+  }
 }

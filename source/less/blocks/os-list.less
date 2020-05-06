@@ -1,7 +1,9 @@
 .os-list {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   margin-top: 28px;
-  background-color: @darkblue;
+  padding: 0;
 }
 
 .os-list__app {
@@ -9,6 +11,7 @@
   width: 47px;
   height: 56px;
   display: block;
+  background-position: 50% 50%;
 
   &--apple {
     background-image: url("../img/logo-apple.svg");

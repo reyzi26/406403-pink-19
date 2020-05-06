@@ -1,7 +1,50 @@
 .application {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-image: url("../img/bg-back-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 170px;
+  padding-top: 20px;
+}
+
+.application--index {
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: 40% 110px, 50% 50%;
   min-width: 320px;
-  min-height: 462px;
+
+  @media screen and (min-width: @tablet-width) {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: calc(50% + 10px) 100%, 50% 50%;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: calc(50% + 100px) calc(50% + 48px), 50% 50%;
+    min-height: 745px;
+    padding-right: 200px;
+  }
+}
+
+
+.application__wrapper {
+  margin-top: 290px;
+  background-color: @darkblue;
+  padding: 10px;
+
+  @media screen and (min-width: @tablet-width) {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding-right: 340px;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .application__title {
@@ -9,18 +52,40 @@
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 33px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  padding: 10px;
+  text-align: center;
+
+  @media screen and (min-width: @tablet-width) {
+    max-width: 550px;
+    padding-right: 340px;
+    font-size: 40px;
+  }
+}
+
+.form-title {
+  @media screen and (min-width: @tablet-width) {
+    font-size: 50px;
+    padding: 80px 0;
+  }
 }
 
 .application__button {
+  display: block;
   border: 3px solid @white-color;
-  font-size: 21px;
+  font-size: 18px;
   color: @white-color;
-  padding: 20px 39px 17px 40px;
+  padding: 20px 28px;
   border-radius: 100px;
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 32px;
   font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 300px;
+  margin-top: 20px;
 
   &:hover {
     color: @color-darkpink;
@@ -31,18 +96,38 @@
   &:active {
     color: @beautybush-color;
   }
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 21px;
+    width: 315px;
+  }
 }
 
 .application__subtitle {
   font-size: 14px;
   color: @white-color;
-  margin-left: 45px;
-  margin-top: 28px;
+  max-width: 320px;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 21px;
+    margin-top: 60px;
+  }
 }
 
-.application__image {
-  background-repeat: no-repeat;
-  display: block;
-  margin-top: 33px;
-  margin-bottom: 25px;
+.application__icon-list {
+  max-width: @mobile-width;
+  margin: 0 auto;
 }

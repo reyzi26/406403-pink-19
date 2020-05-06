@@ -1,4 +1,14 @@
+.page-header {
+  background-color: @blue-color;
+}
+
 .page-header__logo-image {
   display: block;
-  background-color: @blue-color;
+}
+
+.page-header__nav {
+  @media screen and (min-width: @desktop-width) {
+    max-width: 980px;
+    margin: 0 auto;
+  }
 }
