@@ -1,3 +1,9 @@
+.user-data__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .user-data__button-form {
   color: @white-color;
   font-family: inherit;
@@ -6,7 +12,9 @@
   text-transform: uppercase;
   border: 2px solid @junglegreen-color;
   background-color: @junglegreen-color;
-  padding: 23px 56px 22px 55px;
+  width: 280px;
+  padding: 23px 45px;
+  margin-bottom: 46px;
 
   &:hover {
     border: 2px solid @green-color;
@@ -16,4 +24,9 @@
   &:active {
     color: @silvertree-color;
   }
+}
+
+.user-data__legend {
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }

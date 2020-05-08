@@ -36,7 +36,8 @@
     <section class="profile-user">
       <h2 class="visually-hidden">Учавствуй в конкурсе!</h2>
 
-      <p class="profile-user__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+      <p class="profile-user__title">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
 <!-- БОЛЬШАЯ ФОРМА  -->
       <form action="https://echo.htmlacademy.ru" method="post" class="user-data">
@@ -124,23 +125,22 @@
         <section class="contacts-user">
           <h3 class="visually-hidden">Укажите свой номер телефона и почту</h3>
           <ul class="contacts-user__list">
-            <li class="contacts-user__item user-info">
-              <label class="user-info__title">Номер телефона</label>
-              <input type="tel" name="number" class="user-info__text" placeholder="Номер, пожалуйста">
+            <li class="contacts-user__item user-item">
+              <label class="user-item__title">Номер телефона</label>
+              <input type="tel" name="number" class="user-item__text" placeholder="Номер, пожалуйста">
             </li>
 
-            <li class="contacts-user__item user-info">
-              <label class="user-info__title">Адрес почты</label>
-              <input type="email" name="email" class="user-info__text" required placeholder="Введите почту *">
+            <li class="contacts-user__item user-item">
+              <label class="user-item__title">Адрес почты</label>
+              <input type="email" name="email" class="user-item__text" required placeholder="Введите почту *">
             </li>
           </ul>
         </section>
 
-
 <!-- ОПЕРАЦИОННЫЕ СИСТЕМЫ -->
         <section class="programm-user">
           <h3 class="visually-hidden">Какое приложение используете?</h3>
-          <p class="user-achievements__title">
+          <p class="programm-user__title">
             С каким приложением
             путешествовали?
           </p>
@@ -170,27 +170,25 @@
 
         <div class="emotional-commentary">
 
-
-            <label class="emotional-commentary__title">
-              Опишите свои эмоции
-              <textarea name="comment" class="emotional-commentary__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </label>
-
+          <label class="emotional-commentary__box">
+            <p class="emotional-commentary__title">Опишите свои эмоции</p>
+            <textarea name="comment" class="emotional-commentary__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
 
         </div>
 
-        <button type="submit" class="user-data__button-form">Отправить форму</button>
+        <div class="user-data__form">
+          <button type="submit" class="user-data__button-form">Отправить форму</button>
 
-        <small class="user-data__legend">
-          <sup>*</sup> — обязательные поля
-        </small>
+          <small class="user-data__legend">
+            <sup>*</sup> — обязательные поля
+          </small>
+        </div>
 
       </form>
     </section>
 
-
   </main>
-
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -219,8 +217,6 @@
     </div>
 
   </footer>
-
-
 
 </body>
 </html>
