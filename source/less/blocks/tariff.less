@@ -4,13 +4,19 @@
   padding-bottom: 60px;
 }
 
+.tariff__wrapper {
+  overflow: hidden;
+}
+
 .tariff-table {
   border: none;
   background-color: #ffffff;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  width: 840px;
 
   @media screen and (min-width: 660px) {
-    border-collapse: collapse;
-    margin: 0 auto;
     width: 620px;
   }
 
@@ -31,10 +37,6 @@
   font-size: 16px;
   background-color: #283645;
 
-  @media screen and (min-width: 660px) {
-    width: 153px;
-  }
-
   @media screen and (min-width: 1000px) {
     font-size: 18px;
   }
@@ -44,6 +46,11 @@
   border: none;
   background-color: #f2f2f2;
   border-spacing: 0;
+  display: none;
+
+  @media screen and (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .tariff-header--best {
