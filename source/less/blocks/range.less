@@ -1,0 +1,32 @@
+.range {
+  @media screen and (min-width: @tablet-width) {
+    margin-top: 100px;
+  }
+}
+
+.range__slider {
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 70px;
+
+  @media screen and (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  &--fill {
+    display: none;
+
+    @media screen and (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  &--contrast {
+    display: none;
+
+    @media screen and (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}

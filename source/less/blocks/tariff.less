@@ -6,40 +6,46 @@
 
 .tariff__wrapper {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .tariff-table {
   border: none;
   background-color: #ffffff;
   border-collapse: collapse;
-  margin: 0 auto;
   margin-bottom: 45px;
-  width: 840px;
+  min-width: 830px;
 
   @media screen and (min-width: 660px) {
-    width: 620px;
+    min-width: 620px;
   }
 
   @media screen and (min-width: 1000px) {
-    width: 940px;
+    min-width: 940px;
     height: 280px;
   }
 }
 
 .tariff-table__item {
-  height: 79px;
+  height: 98px;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 152px;
+    height: 79px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    height: 98px;
+    width: 233px;
+  }
 }
 
 .tariff-header {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  font-size: 16px;
   background-color: #283645;
-
-  @media screen and (min-width: 1000px) {
-    font-size: 18px;
-  }
 }
 
 .tariff-header--void {
@@ -49,7 +55,7 @@
   display: none;
 
   @media screen and (min-width: @tablet-width) {
-    display: block;
+    display: table-cell;
   }
 }
 
@@ -62,6 +68,15 @@
   font-weight: 700;
   margin: 0;
   padding: 0;
+  font-size: 18px;
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .tariff-header__price {
@@ -69,4 +84,13 @@
   margin: 0;
   padding: 0;
   padding-top: 10px;
+  font-size: 24px;
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }

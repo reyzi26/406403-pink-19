@@ -9,17 +9,14 @@
 
   @media screen and (min-width: 660px) {
     padding-left: 15px;
-    display: flex;
+    display: table-cell;
     border: none;
-    width: 150px;
-    padding-top: 14px;
   }
 
   @media screen and (min-width: 1000px) {
     font-size: 18px;
     padding-left: 24px;
-    width: 235px;
-    padding-top: 19px;
+    width: 180px;
   }
 }
 
@@ -34,9 +31,29 @@
   }
 }
 
-
 .options-list__item {
   height: 50px;
   border: 2px solid #e5e5e5;
   padding-left: 22px;
+
+  &::before {
+    @media screen and (min-width: 660px) {
+      display: none;
+    }
+  }
+}
+
+
+.options-list__row--filter .options-list__item::before {
+  content: "Розовый фильтр";
+}
+
+
+.options-list__row--smiles .options-list__item::before {
+  content: "Смайлики";
+}
+
+
+.options-list__row--comments .options-list__item::before {
+  content: "Комментарии";
 }

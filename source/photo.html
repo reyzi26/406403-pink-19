@@ -123,24 +123,39 @@
     <section class="post-photo">
       <h2 class="visually-hidden">Отредактируй и запость фоточку!</h2>
 
+      <!-- <div class="post-photo__functions"> -->
 
-      <div class="post-photo__functions">
         <form class="post-photo__form" action="https://echo.htmlacademy.ru" method="get">
           <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Заметенная снегом дорога" class="post-photo__user">
 
-          <div class="functions">
-            <button class="functions__item functions__item--frame">Рамка</button>
-            <button class="functions__item functions__item--fill">Заливка</button>
-            <button class="functions__item functions__item--contrast">Контраст</button>
+          <div class="post-photo__functions">
+
+            <div class="post-photo__settings visually-settings">
+
+              <div class="visually-settings__list">
+                <button class="visually-settings__item visually-settings__item--frame">Рамка</button>
+                <button class="visually-settings__item visually-settings__item--fill">Заливка</button>
+                <button class="visually-settings__item visually-settings__item--contrast">Контраст</button>
+              </div>
+
+              <div clsss="visually-settings__range range">
+                <input type="range" class="range__slider range__slider--frame" name="range-frame" min="0" max="100" value="90" step="10">
+                <input type="range" class="range__slider range__slider--fill" name="range-fill" min="0" max="100" value="90" step="10">
+                <input type="range" class="range__slider range__slider--contrast" name="range-contrast" min="0" max="100" value="90" step="10">
+              </div>
+
+            </div>
+
+            <div class="post-photo__buttons post-button">
+              <button class="post-button post-button--post" type="submit">Запостить</button>
+              <button class="post-button post-button--cancel" type="reset">Отмена</button>
+            </div>
+
           </div>
 
-          <input type="range" class="range-slider range-slider--frame" name="range" min="0" max="100" value="90" step="10">
-
-          <button class="post-photo__button post-photo__button--post" type="submit">Запостить</button>
-          <button class="post-photo__button post-photo__button--cancel" type="reset">Отмена</button>
         </form>
 
-      </div>
+      <!-- </div> -->
 
     </section>
 
