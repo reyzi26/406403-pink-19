@@ -1,7 +1,30 @@
+.contacts-user {
+  margin: 0 auto;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 620px;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+}
+
 .contacts-user__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   padding: 0;
   padding-top: 30px;
+}
+
+.contacts-user__info {
+  margin: 0 auto;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (min-width: @tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
