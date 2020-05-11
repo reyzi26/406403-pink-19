@@ -1,0 +1,30 @@
+.tariff-table {
+  border: none;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  margin-bottom: 45px;
+  min-width: 830px;
+
+  @media screen and (min-width: 660px) {
+    min-width: 620px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    min-width: 940px;
+    height: 280px;
+  }
+}
+
+.tariff-table__item {
+  height: 98px;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 152px;
+    height: 79px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    height: 98px;
+    width: 233px;
+  }
+}

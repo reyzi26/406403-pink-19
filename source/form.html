@@ -48,92 +48,66 @@
 
 
 <!-- БОЛЬШАЯ ФОРМА  -->
-      <form action="https://echo.htmlacademy.ru" method="post" class="user-data">
-<!-- ВВОД ФИО -->
+      <form action="https://echo.htmlacademy.ru" method="post" class="user-data"><!-- ВВОД ФИО -->
 
-        <section class="user-fullname">
-          <h3 class="visually-hidden">Ввод Ф.И.О.</h3>
 
-          <ul class="user-fullname__list">
-            <li class="user-fullname__item user-item">
-              <label class="user-item__title">Фамилия:</label>
-              <input type="text" name="surname" class="user-item__text" required placeholder="Укажите фамилию *">
-            </li>
+          <section class="user-fullname">
+            <h3 class="visually-hidden">Ввод Ф.И.О.</h3>
 
-            <li class="user-fullname__item user-item">
-              <label class="user-item__title">Имя:</label>
-              <input type="text" name="name" class="user-item__text" required placeholder="Введите ваше имя *">
-            </li>
-
-            <li class="user-fullname__item user-item">
-              <label class="user-item__title">Отчество:</label>
-              <input type="text" name="patronymic" class="user-item__text" placeholder="Ну и отчество тоже">
-            </li>
-          </ul>
-
-        </section>
-
-<!-- ВЫБОР ДОСТИЖЕНИЙ -->
-        <section class="user-achievements">
-          <h3 class="visually-hidden">Выбор достижений</h3>
-
-          <fieldset>
-
-            <legend class="user-achievements__title">
-              Ваши безбашенные
-              достижения в путешествии
-            </legend>
-
-            <ul class="user-achievements__list">
-
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_1" checked>
-                    Сделал селфи с акулой
-                </label>
+            <ul class="user-fullname__list">
+              <li class="user-fullname__item user-item">
+                <label class="user-item__title">Фамилия:</label>
+                <input type="text" name="surname" class="user-item__text" required placeholder="Укажите фамилию *">
               </li>
 
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_2" checked>
-                    Обгорел на пляже
-                </label>
+              <li class="user-fullname__item user-item">
+                <label class="user-item__title">Имя:</label>
+                <input type="text" name="name" class="user-item__text" required placeholder="Введите ваше имя *">
               </li>
 
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_3">
-                    Видел Чака Норриса
-                </label>
-              </li>
-
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_4">
-                    Накупил сувениров
-                </label>
-              </li>
-
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_5" checked>
-                    Удержал башню
-                </label>
-              </li>
-
-              <li class="user-achievements__item">
-                <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_6">
-                    Разгромил отель
-                </label>
+              <li class="user-fullname__item user-item">
+                <label class="user-item__title">Отчество:</label>
+                <input type="text" name="patronymic" class="user-item__text" placeholder="Ну и отчество тоже">
               </li>
             </ul>
 
-          </fieldset>
+          </section>
 
 
+  <!-- ОПЕРАЦИОННЫЕ СИСТЕМЫ -->
+          <section class="programm-user">
+            <h3 class="visually-hidden">Какое приложение используете?</h3>
 
-        </section>
+            <fieldset>
+              <legend class="programm-user__title">
+                С каким приложением
+                путешествовали?
+              </legend>
+              <ul class="programm-user__list">
+                <li>
+                  <label class="programm-user__item os-use">
+                    <input class="os-use__user" type="radio" name="status" value="os-ios" checked>
+                    Pink для iOS
+                  </label>
+                </li>
+
+                <li>
+                  <label class="programm-user__item os-use">
+                    <input class="os-use__user" type="radio" name="status" value="os-android">
+                    Pink на Android
+                  </label>
+                </li>
+
+                <li>
+                  <label class="programm-user__item os-use">
+                    <input class="os-use__user" type="radio" name="status" value="os-windows">
+                    Windows Phone
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+          </section>
 
 <!-- НОМЕР ТЕЛЕФОНА И ПОЧТЫ -->
         <section class="contacts-user">
@@ -156,40 +130,75 @@
 
         </section>
 
-<!-- ОПЕРАЦИОННЫЕ СИСТЕМЫ -->
-        <section class="programm-user">
-          <h3 class="visually-hidden">Какое приложение используете?</h3>
+<!-- ВЫБОР ДОСТИЖЕНИЙ -->
+        <section class="user-achievements">
+          <h3 class="visually-hidden">Выбор достижений</h3>
 
           <fieldset>
-            <legend class="programm-user__title">
-              С каким приложением
-              путешествовали?
+
+            <legend class="user-achievements__title">
+              Ваши безбашенные
+              достижения в путешествии
             </legend>
-            <ul class="programm-user__list">
-              <li>
-                <label class="programm-user__item os-use">
-                  <input class="os-use__user" type="radio" name="status" value="os-ios" checked>
-                  Pink для iOS
+
+            <ul class="user-achievements__list">
+
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_1" checked>
+                  <span class="checkbox-achievement__text">
+                    Сделал селфи с акулой
+                  </span>
                 </label>
               </li>
 
-              <li>
-                <label class="programm-user__item os-use">
-                  <input class="os-use__user" type="radio" name="status" value="os-android">
-                  Pink на Android
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_2" checked>
+                  <span class="checkbox-achievement__text">
+                    Обгорел на пляже
+                  </span>
                 </label>
               </li>
 
-              <li>
-                <label class="programm-user__item os-use">
-                  <input class="os-use__user" type="radio" name="status" value="os-windows">
-                  Windows Phone
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_3">
+                  <span class="checkbox-achievement__text">
+                    Видел Чака Норриса
+                  </span>
+                </label>
+              </li>
+
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_4">
+                  <span class="checkbox-achievement__text">
+                    Накупил сувениров
+                  </span>
+                </label>
+              </li>
+
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_5" checked>
+                  <span class="checkbox-achievement__text">
+                    Удержал башню
+                  </span>
+                </label>
+              </li>
+
+              <li class="user-achievements__item">
+                <label class="checkbox-achievement">
+                  <input type="checkbox" name="achievement_6">
+                  <span class="checkbox-achievement__text">
+                    Разгромил отель
+                  </span>
                 </label>
               </li>
             </ul>
+
           </fieldset>
-
-
         </section>
 
         <div class="emotional-commentary">
@@ -203,8 +212,6 @@
             </label>
 
           </fieldset>
-
-
 
         </div>
 
