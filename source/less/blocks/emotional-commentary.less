@@ -1,10 +1,60 @@
+.emotional-commentary {
+  order: 4;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.emotional-commentary__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .emotional-commentary__title {
   color: @color-darkpink;
   font-size: 14px;
   text-transform: uppercase;
+  padding-top: 41px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: @tablet-width) {
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 }
 
 .emotional-commentary__text {
   color: @blue-color;
   font-size: 18px;
+  width: 280px;
+  min-height: 201px;
+  margin-bottom: 42px;
+  padding-top: 23px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 510px;
+    height: 194px;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 820px;
+    height: 124px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
 }

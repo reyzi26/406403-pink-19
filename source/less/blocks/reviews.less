@@ -1,5 +1,32 @@
-.reviews__author-name {
-  font-weight: 700;
-  color: #000000;
-  font-size: 18px;
+.reviews__list {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 42px;
+}
+
+.reviews__wrapper {
+  margin-bottom: 50px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  color: @blue-color;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @media screen and (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 618px;
+    order: 1;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 690px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
 }

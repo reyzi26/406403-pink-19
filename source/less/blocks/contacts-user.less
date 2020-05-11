@@ -1,3 +1,46 @@
+.contacts-user {
+  margin: 0 auto;
+  order: 2;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 620px;
+    margin-top: 30px;
+    margin-bottom: 62px;
+    order: 3;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
 .contacts-user__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @media screen and (min-width: @desktop-width) {
+    flex-direction: row;
+    height: 162px;
+    margin: 0;
+  }
+}
+
+.contacts-user__info {
+  margin: 0 auto;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
+    display: none;
+  }
+
+  @media screen and (min-width: @tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
 }

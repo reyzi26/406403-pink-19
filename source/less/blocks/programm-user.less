@@ -1,5 +1,57 @@
+.programm-user {
+  background-color: #f2f2f2;
+  order: 3;
+
+  @media screen and (min-width: @tablet-width) {
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 620px;
+    order: 1;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    width: 435px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.programm-user__title {
+  color: @color-darkpink;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @media screen and (min-width: @tablet-width) {
+    width: 400px;
+    padding-top: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 .programm-user__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 44px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 60px;
+  }
+}
+
+.programm-user__list li {
+  margin-top: 39px;
 }
 
 .programm-user__item {

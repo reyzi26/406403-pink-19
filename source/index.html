@@ -116,27 +116,35 @@
 
 
         <section class="reviews">
-          <div class="reviews__wrapper slider">
+          <div class="reviews__wrapper">
 
             <h2 class="visually-hidden">Отзывы о нас</h2>
 
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
-                <cite class="reviews__author-name">
-                    Николай Петров
-                </cite>
-                <p class="reviews__text">
+            <div class="reviews__list">
+              <blockquote class="reviews__item">
+
+                <div class="author-info">
+                  <cite class="author-info__name">
+                      Николай Петров
+                  </cite>
+                  <p class="author-info__age">
+                    25 лет, водитель трамвая
+                  </p>
+                </div>
+
+                <div class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому
                   взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                   женой в комментариях к выложенной фотографии!»
-                </p>
+                </div>
+
               </blockquote>
             </div>
 
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--active" type="button">Слайд №1</button>
-              <button class="slider__toggle" type="button">Слайд №2</button>
-              <button class="slider__toggle" type="button">Слайд №3</button>
+            <p class="slider-toggles">
+              <button class="slider-toggles__item slider-toggles__item--active" type="button">Слайд №1</button>
+              <button class="slider-toggles__item" type="button">Слайд №2</button>
+              <button class="slider-toggles__item" type="button">Слайд №3</button>
             </p>
 
           </div>
@@ -145,57 +153,69 @@
 
 
         <section class="tariff">
-          <div class="tariff__wrapper slider">
+          <div class="tariff__wrapper">
             <h2 class="visually-hidden">Тарифный план</h2>
 
-            <div class="tariff__list plan__slider">
+              <table border="" class="tariff-table">
 
-              <div class="tariff__item plan__item">
-                <h3 class="tariff__name">База</h3>
-                <p class="tariff__price">1,99 USD</p>
+                <thead class="tariff-table__titles">
 
-                <ul class="tariff__functional functional-list">
-                  <li class="functional-list__item functional-list__item--active">Розовый фильтр<span class="visually-hidden">: включено</span></li>
-                  <li class="functional-list__item">Смайлики<span class="visually-hidden">: отключено</span></li>
-                  <li class="functional-list__item">Комментарии<span class="visually-hidden">: отключено</span></li>
-                </ul>
+                  <tr>
+                    <td class="tariff-table__item tariff-header tariff-header--void">
+                    <!-- Пустая ячейка -->
+                    </td>
 
-              </div>
+                    <td class="tariff-table__item tariff-header">
+                    <h3 class="tariff-header__name">База</h3>
+                    <p class="tariff-header__price">1,99 USD</p>
+                    </td>
 
+                    <td class="tariff-table__item tariff-header tariff-header--best">
+                    <h3 class="tariff-header__name">Стандарт</h3>
+                    <p class="tariff-header__price">3,99 USD</p>
+                    </td>
 
-              <div class="tariff__item plan__item">
-                <h3 class="tariff__name">Стандарт</h3>
-                <p class="tariff__price">3,99 USD</p>
+                    <td class="tariff-table__item tariff-header">
+                    <h3 class="tariff-header__name">Анлим</h3>
+                    <p class="tariff-header__price">9,99 USD</p>
+                    </td>
+                  </tr>
 
-                <ul class="tariff__functional functional-list">
-                  <li class="functional-list__item functional-list__item--active">Розовый фильтр<span class="visually-hidden">: включено</span></li>
-                  <li class="functional-list__item functional-list__item--active">Смайлики<span class="visually-hidden">: включено</span></li>
-                  <li class="functional-list__item">Комментарии<span class="visually-hidden">: отключено</span></li>
-                </ul>
+                  </thead>
 
-              </div>
+                  <tbody class="tariff-table__options options-list">
+                    <tr class="options-list__row options-list__row--filter">
+                    <th class="options-list__title">Розовый фильтр</th>
+                    <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                    <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                    <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                    </tr>
 
-              <div class="tariff__item plan__item">
-                <h3 class="tariff__name">Анлим</h3>
-                <p class="tariff__price">9,99 USD</p>
+                    <tr class="options-list__row options-list__row--smiles">
+                      <th class="options-list__title">Смайлики</th>
+                      <td class="options-list__item"><span class="visually-hidden">отключено</span></td>
+                      <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                      <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                    </tr>
 
-                <ul class="tariff__functional functional-list">
-                  <li class="functional-list__item functional-list__item--active">Розовый фильтр<span class="visually-hidden">: включено</span></li>
-                  <li class="functional-list__item functional-list__item--active">Смайлики<span class="visually-hidden">: включено</span></li>
-                  <li class="functional-list__item functional-list__item--active">Комментарии<span class="visually-hidden">: включено</span></li>
-                </ul>
+                    <tr class="options-list__row options-list__row--comments">
+                      <th class="options-list__title">Комментарии</th>
+                      <td class="options-list__item"><span class="visually-hidden">отключено</span></td>
+                      <td class="options-list__item"><span class="visually-hidden">отключено</span></td>
+                      <td class="options-list__item options-list__item--active"><span class="visually-hidden">включено</span></td>
+                    </tr>
+                  </tbody>
 
-              </div>
+                </table>
+          </div>
 
-            </div>
-
-            <p class="tariff__toggles slider__toogles">
-              <button class="slider__toogle" type="button">Слайд №1</button>
-              <button class="slider__toogle toogle-active" type="button">Слайд №2</button>
-              <button class="slider__toogle" type="button">Слайд №3</button>
+            <p class="slider-toggles slider-toggles--tariff">
+              <button class="slider-toggles__item" type="button">Слайд №1</button>
+              <button class="slider-toggles__item slider-toggles__item--active" type="button">Слайд №2</button>
+              <button class="slider-toggles__item" type="button">Слайд №3</button>
             </p>
 
-          </div>
+
         </section>
 
     </main>
