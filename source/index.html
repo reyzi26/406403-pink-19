@@ -3,6 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <!-- Pixel Glass -->
+    <!-- <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url("preview/pink-index-mobile.png");
+      }
+      /* Tablet */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url("preview/pink-index-tablet.png");
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1000px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("preview/pink-index-desktop.png");
+        }
+      }
+      BODY {
+        opacity: .3;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script> -->
+    <!-- // Pixel Glass -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,7 +47,7 @@
           <button class="main-nav__button" type="button">Открыть меню</button>
         </div>
 
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
@@ -254,7 +283,7 @@
               Приезжайте в гости:
             </b>
             <a href="https://goo.gl/maps/GQka94hTpP7rPSyb6" class="contacts__address">
-              <span class="contacts__address-mobile">ул. Большая Конюшенная, 19/8</span>
+              <span class="contacts__address-mobile">ул. Большая <br>Конюшенная, 19/8</span>
             </a>
           </div>
 
