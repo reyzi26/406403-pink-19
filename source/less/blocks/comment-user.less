@@ -1,22 +1,69 @@
 .comment-user {
   background-color: #f2f2f2;
-  padding-left: 15px;
+  padding-left: 18px;
+  width: 88%;
+  min-height: 121px;
+
+  &--best {
+    width: 88%;
+    min-height: 192px;
+  }
 
   @media screen and (min-width: @tablet-width) {
-    min-height: 180px;
+    min-height: 155px;
+    width: 100%;
+
+    &--best {
+      width: 94%;
+      min-height: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.comment-user--best p:nth-child(1) {
+  @media screen and (min-width: @tablet-width) {
+    order: 0;
+    height: 10px;
+    padding-top: 26px;
+    padding-left: 10px;
+  }
+}
+
+.comment-user--best p:nth-child(2) {
+  @media screen and (min-width: @tablet-width) {
+    order: 10;
+    margin-top: -12px;
+    margin-left: 0;
+  }
+}
+
+.comment-user--best p:nth-child(3) {
+  @media screen and (min-width: @tablet-width) {
+    order: 6;
+    height: 10px;
   }
 }
 
 .comment-user__name {
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   color: @blue-color;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding-top: 25px;
+  padding-top: 20px;
   margin-top: 0;
+
+  @media screen and (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-left: 10px;
+  }
 }
 
 .comment-user__time {
+  display: inline-block;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -24,9 +71,15 @@
 
 .comment-user__text {
   color: @blue-color;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  line-height: 24px;
 
   @media screen and (min-width: @tablet-width) {
     width: 90%;
+    padding-left: 10px;
+    margin-top: -12px;
   }
 }
 
@@ -34,5 +87,44 @@
   font-size: 12px;
   text-transform: uppercase;
   color: @color-darkpink;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+  position: relative;
+  display: flex;
+
+  &::before {
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 13px;
+    height: 12px;
+    left: 2px;
+    top: 3px;
+    position: absolute;
+
+    @media screen and (min-width: @tablet-width) {
+      left: 238px;
+    }
+  }
+
+  @media screen and (min-width: @tablet-width) {
+    padding-left: 9px;
+    margin-top: auto;
+  }
+
+  &--best {
+    &::before {
+      @media screen and (min-width: @tablet-width) {
+        top: 17px;
+        left: 138px;
+      }
+    }
+
+    @media screen and (min-width: @tablet-width) {
+      padding-top: 16px;
+      padding-right: 59px;
+      padding-left: 30px;
+      margin-top: auto;
+    }
+  }
 }

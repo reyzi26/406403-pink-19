@@ -7,6 +7,7 @@
     background-color: #ffffff;
     width: 620px;
     margin: 0 auto;
+    margin-top: -6px;
     margin-bottom: 0;
     order: 4;
   }
@@ -16,6 +17,48 @@
   }
 }
 
+.user-achievements li:nth-child(1) {
+  @media screen and (min-width: @desktop-width) {
+    order: 0;
+  }
+}
+
+.user-achievements li:nth-child(2) {
+  @media screen and (min-width: @desktop-width) {
+    order: 4;
+  }
+}
+
+.user-achievements li:nth-child(3) {
+  @media screen and (min-width: @desktop-width) {
+    order: 2;
+    margin-left: 16px;
+  }
+}
+
+.user-achievements li:nth-child(4) {
+  @media screen and (min-width: @desktop-width) {
+    order: 4;
+    margin-left: 16px;
+  }
+}
+
+.user-achievements li:nth-child(5) {
+  @media screen and (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.user-achievements li:nth-child(6) {
+  @media screen and (min-width: @desktop-width) {
+    order: 5;
+  }
+}
+
+.user-achievements fieldset {
+  margin-bottom: -16px;
+}
+
 .user-achievements__title {
   color: @color-darkpink;
   font-size: 14px;
@@ -23,7 +66,7 @@
   text-align: center;
   width: 240px;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 37px;
   padding-bottom: 42px;
 
   @media screen and (min-width: @tablet-width) {
@@ -44,15 +87,17 @@
 
   @media screen and (min-width: @tablet-width) {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 46px;
     margin-left: 55px;
+    margin-bottom: -11px;
   }
 
   @media screen and (min-width: @desktop-width) {
     width: 100%;
     margin: 0 auto;
-    margin-top: 54px;
+    margin-top: 46px;
     margin-left: 55px;
+    margin-bottom: -4px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,7 +106,15 @@
 }
 
 .user-achievements__list li {
-  padding-bottom: 47px;
+  padding-bottom: 57px;
+
+  @media screen and (min-width: @tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    padding-right: 1px;
+  }
 }
 
 .user-achievements__item {
@@ -69,6 +122,6 @@
   font-size: 18px;
 
   @media screen and (min-width: @desktop-width) {
-    width: 33.3%;
+    width: 296px;
   }
 }

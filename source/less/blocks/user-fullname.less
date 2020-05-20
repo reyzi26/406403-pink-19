@@ -1,8 +1,11 @@
 .user-fullname {
   order: 0;
+  margin-bottom: 11px;
 
   @media screen and (min-width: @tablet-width) {
     margin: 0 auto;
+    margin-top: -7px;
+    min-height: 295px;
   }
 
   @media screen and (min-width: @desktop-width) {
@@ -25,5 +28,13 @@
 
   @media screen and (min-width: @desktop-width) {
     width: 435px;
+  }
+}
+
+.user-fullname__list:nth-child(2) {
+  margin-left: 0;
+
+  @media screen and (min-width: @desktop-width) {
+    margin-top: 12px;
   }
 }

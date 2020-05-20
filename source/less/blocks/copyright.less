@@ -1,7 +1,14 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 28px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-top: 5px;
+    margin-right: -13px;
+    padding-bottom: 0;
+  }
 }
 
 .copyright__text {
@@ -9,6 +16,11 @@
   color: @blue-color;
   margin-right: 15px;
   margin-top: 5px;
+  font-weight: 400;
+
+  @media screen and (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {

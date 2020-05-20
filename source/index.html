@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <!-- Pixel Glass -->
-    <!-- <style>
+    <style>
       HTML {
         background-repeat: no-repeat;
-        background-position:  50% 0;
+        background-position:  50% -260px;
         /* Mobile layout by default */
         background-image: url("preview/pink-index-mobile.png");
       }
@@ -15,6 +15,7 @@
       @media ( min-width: 660px ) {
         HTML {
           /* Tablet layout */
+          background-position: 50% -260px;
           background-image: url("preview/pink-index-tablet.png");
         }
       }
@@ -22,6 +23,7 @@
       @media ( min-width: 1000px ) {
         HTML {
           /* Desktop layout */
+          background-position: 50% 0;
           background-image: url("preview/pink-index-desktop.png");
         }
       }
@@ -29,8 +31,8 @@
         opacity: .3;
       }
     </style>
-    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-    <script src="../node_modules/pixel-glass/script.js"></script> -->
+    <link rel="stylesheet" href="pixel-glass/styles.css">
+    <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -44,14 +46,14 @@
             <img class="page-header__logo-image" alt="Логотип Пинк" src="img/logo-pink-white-mobile.svg" width="75"
             height="22">
           </a>
-          <button class="main-nav__button" type="button">Открыть меню</button>
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
 
         <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          <li class="site-list__item"><a href="">HTML Academy</a></li>
         </ul>
 
       </nav>
@@ -105,7 +107,7 @@
                   Меняет мир вокруг
                 </h3>
                 <p class="advantages__description">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbspэффект
                 </p>
               </li>
 
@@ -127,15 +129,15 @@
 
           <div class="possitive-effect__box">
             <h3 class="positive-effect__title">
-              Эффект
+              Эффект<br>
               на 24 часа!
             </h3>
 
             <div class="positive-effect__text">
               Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
-              целые сутки!
+              и доказали, что&nbspположительный эффект
+              от&nbspиспользования приложения длится
+              целые&nbspсутки!
             </div>
 
             <a href="#" class="positive-effect__info">Узнать больше об исследовании</a>
@@ -171,9 +173,9 @@
             </div>
 
             <p class="slider-toggles">
-              <button class="slider-toggles__item slider-toggles__item--active" type="button">Слайд №1</button>
-              <button class="slider-toggles__item" type="button">Слайд №2</button>
-              <button class="slider-toggles__item" type="button">Слайд №3</button>
+              <button class="slider-toggles__item slider-toggles__item--active" type="button"><span class="visually-hidden">Слайд №1</span></button>
+              <button class="slider-toggles__item" type="button"><span class="visually-hidden">Слайд №2</span></button>
+              <button class="slider-toggles__item" type="button"><span class="visually-hidden">Слайд №3</span></button>
             </p>
 
           </div>
@@ -239,9 +241,9 @@
           </div>
 
             <p class="slider-toggles slider-toggles--tariff">
-              <button class="slider-toggles__item" type="button">Слайд №1</button>
-              <button class="slider-toggles__item slider-toggles__item--active" type="button">Слайд №2</button>
-              <button class="slider-toggles__item" type="button">Слайд №3</button>
+              <button class="slider-toggles__item" type="button"><span class="visually-hidden">Слайд №1</span></button>
+              <button class="slider-toggles__item slider-toggles__item--active" type="button"><span class="visually-hidden">Слайд №2</span></button>
+              <button class="slider-toggles__item" type="button"><span class="visually-hidden">Слайд №3</span></button>
             </p>
 
 

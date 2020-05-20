@@ -5,7 +5,7 @@
   margin-top: 36px;
   color: @blue-color;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
   line-height: 30px;
   width: 272px;
 
@@ -22,8 +22,23 @@
 }
 
 .head-block__title {
-  margin-bottom: 0;
   display: block;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 45px;
+  width: 273px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-top: -10px;
+    width: auto;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-top: -8px;
+    width: 756px;
+  }
 }
 
 .head-block__subtitle {
@@ -32,5 +47,10 @@
   @media screen and (min-width: @tablet-width) {
     display: block;
     margin-top: 0;
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    display: inline-block;
   }
 }

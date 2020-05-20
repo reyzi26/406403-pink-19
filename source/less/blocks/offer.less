@@ -1,36 +1,47 @@
 .offer {
   background-color: #ffffff;
-  padding-bottom: 50px; /* Значение для сетки */
+  padding-bottom: 64px; /* Значение для сетки */
   padding-top: 36px;  /* Значение для сетки */
 
   @media screen and (min-width: @tablet-width) {
     min-height: 140px;
+    padding-top: 54px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    padding-top: 79px;
+    padding-bottom: 174px;
   }
 }
 
 .offer__question {
   color: @blue-color;
-  margin: 0 auto;
   font-size: 24px;
+  font-weight: 300;
   text-align: center;
+  line-height: 33px;
   width: 210px;
-  margin-bottom: 21px;
+  margin: 2px auto 21px;
 
   @media screen and (min-width: @tablet-width) {
     width: 650px;
-    margin-bottom: 0;
+    margin-bottom: 11px;
     font-size: 40px;
   }
 
   @media screen and (min-width: @desktop-width) {
     min-width: 800px;
     font-size: 50px;
+    margin-bottom: 16px;
   }
 }
 
 .offer__exclamation {
   color: @blue-color;
+  font-weight: 300;
   font-size: 24px;
+  line-height: 31px;
   text-align: center;
   margin: 0 auto;
   width: 210px;
@@ -38,10 +49,12 @@
   @media screen and (min-width: @tablet-width) {
     min-width: 400px;
     font-size: 40px;
+    line-height: 45px;
   }
 
   @media screen and (min-width: @desktop-width) {
     min-width: 600px;
     font-size: 50px;
+    line-height: 57px;
   }
 }
