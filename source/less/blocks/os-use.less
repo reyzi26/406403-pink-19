@@ -1,5 +1,25 @@
+.os-use__text {
+  margin-left: 60px;
+  position: relative;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-left: 52px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-left: 50px;
+  }
+}
+
 .os-use__user {
   margin-right: 36px;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon-map-marker.svg");
+  margin-left: -9px;
+  margin-top: -7px;
 
   @media screen and (min-width: @tablet-width) {
     margin-right: 28px;

@@ -89,15 +89,17 @@
   @media screen and (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
-    width: 400px;
+    margin: 0 auto;
+    padding-left: 272px;
+    min-width: 295px;
   }
 
   @media screen and (min-width: @desktop-width) {
-    min-width: 560px;
+    width: 890px;
     min-height: 276px;
     padding-right: 50px;
-    padding-top: 50px;
+    padding-top: 187px;
+    padding-left: 315px;
   }
 
   &::before {
@@ -107,13 +109,13 @@
       height: 276px;
       background-color: black;
       width: 243px;
-      left: -281px;
+      left: -11px;
       content: "";
     }
 
     @media screen and (min-width: @desktop-width) {
-      left: -345px;
-      bottom: -21%;
+      left: -31px;
+      bottom: -12%;
       height: 353px;
       width: 310px;
     }

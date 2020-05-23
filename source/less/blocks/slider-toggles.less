@@ -1,10 +1,22 @@
 .slider-toggles {
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  width: 300px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin-top: -5px;
+
+  @media screen and (min-width: @tablet-width) {
+    margin-top: 2px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    display: none;
+  }
 
   &--tariff {
+    margin-top: -2px;
+
     @media screen and (min-width: @tablet-width) {
       display: none;
       padding-bottom: 10px;
@@ -13,13 +25,22 @@
 }
 
 .slider-toggles__item {
-  background-image: url("../../img/icon-diagram-2.svg");
+  background-image: url("../img/icon-diagram-2.svg");
   background-repeat: no-repeat;
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 
   &--active {
-    background-image: url("../../img/icon-editor-diagram-fill.svg");
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    width: 12px;
+    height: 12px;
+    border: 3px solid #283645;
+    border-radius: 50%;
   }
 }

@@ -6,12 +6,16 @@
     width: 620px;
     margin: 0 auto;
     margin-bottom: 70px;
-    margin-top: 70px;
+    margin-top: 76px;
   }
 
   @media screen and (min-width: @desktop-width) {
     width: 940px;
   }
+}
+
+.emotional-commentary fieldset {
+  border: 2px solid #e5e5e5;
 }
 
 .emotional-commentary__box {
@@ -41,18 +45,18 @@
 
 .emotional-commentary__text {
   color: @blue-color;
-  font-size: 20px;
+  font-family: inherit;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   width: 280px;
   min-height: 201px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 0;
   padding-top: 15px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 0;
-  word-spacing: -2px;
-  letter-spacing: -1px;
+  border: 2px solid #e5e5e5;
 
   @media screen and (min-width: @tablet-width) {
     min-height: 193px;
@@ -66,5 +70,7 @@
     margin-top: 28px;
     margin-bottom: 0;
     min-height: 127px;
+    padding-top: 14px;
+    padding-left: 19px;
   }
 }

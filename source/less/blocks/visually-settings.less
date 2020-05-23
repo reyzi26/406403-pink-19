@@ -2,12 +2,13 @@
   @media screen and (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    height: 200px;
-    padding-top: 30px;
+    height: 256px;
+    padding-top: 68px;
   }
 
   @media screen and (min-width: @desktop-width) {
-    padding-top: 20px;
+    padding-top: 68px;
+    margin-left: 38px;
   }
 }
 
@@ -15,20 +16,66 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 42px;
-  margin-bottom: 40px;
+  margin-top: 34px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  width: 240px;
 
   @media screen and (min-width: @tablet-width) {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-right: 20px;
+    width: 50px;
+    height: 240px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-left: 20px;
+    margin-right: 41px;
   }
 }
 
 .visually-settings__item {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--frame {
+    width: 44px;
+    height: 44px;
+    background-image: url("../../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+    background-image: url("../../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+    background-image: url("../../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    margin-top: 9px;
+
+    @media screen and (min-width: @desktop-width) {
+      margin-left: 8px;
+    }
+  }
+
   @media screen and (min-width: @tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    margin-bottom: 26px;
   }
 }

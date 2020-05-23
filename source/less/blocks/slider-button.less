@@ -1,0 +1,41 @@
+.slider-button {
+  display: none;
+
+  @media screen and (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.slider-button__back {
+  background-image: url("../img/icon-review-arrow-left.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  opacity: 0.3;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  order: 1;
+  margin-top: 32px;
+  margin-left: -47px;
+}
+
+.slider-button__forward {
+  order: 2;
+  background-image: url("../img/icon-review-arrow-right.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 50px;
+  opacity: 0.3;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-right: -54px;
+}

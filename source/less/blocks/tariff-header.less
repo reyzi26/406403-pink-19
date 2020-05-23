@@ -14,19 +14,40 @@
 }
 
 .tariff-header--void {
-  border: none;
   background-color: #f2f2f2;
   border-spacing: 0;
   display: none;
 
   @media screen and (min-width: @tablet-width) {
     display: table-cell;
+    border-color: #f2f2f2;
   }
 }
 
 .tariff-header--best {
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
+  position: relative;
+
+  &::after {
+    background-image: url("../img/bg-hit.svg");
+    content: "Хит";
+    width: 74px;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    @media screen and (min-width: @tablet-width) {
+      background-image: url("../../img/bg-hit-tablet.svg");
+      width: 61px;
+      height: 61px;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      background-image: url("../../img/bg-hit-tablet.svg");
+    }
+  }
 }
 
 .tariff-header__name {
