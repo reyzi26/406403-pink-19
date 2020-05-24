@@ -11,17 +11,38 @@
   }
 }
 
-.os-use__user {
+.os-use {
+  padding-left: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.os-use__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.os-use__box {
   margin-right: 36px;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 39px;
   position: absolute;
   content: "";
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../img/icon-apps-off.svg");
+  background-repeat: no-repeat;
   margin-left: -9px;
-  margin-top: -7px;
+  margin-top: 0;
 
   @media screen and (min-width: @tablet-width) {
     margin-right: 28px;
   }
+}
+
+.os-use__input:checked + .os-use__box {
+  background-image: url("../img/icon-apps-on.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

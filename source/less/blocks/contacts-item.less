@@ -5,28 +5,34 @@
   margin-bottom: 23px;
   position: relative;
 
-  &::after {
-    @media screen and (min-width: @tablet-width) {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 60px;
-      background-image: url("../img/icon-phone.svg");
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-color: #e5e5e5;
-      top: 2px;
-      right: 0;
-      text-align: center;
+  &--number {
+    &::after {
+      @media screen and (min-width: @tablet-width) {
+        position: absolute;
+        content: "";
+        width: 62px;
+        height: 60px;
+        background-image: url("../img/icon-phone.svg");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: #e5e5e5;
+        top: 2px;
+        right: 0;
+        text-align: center;
+      }
+
+      @media screen and (min-width: @desktop-width) {
+        width: 60px;
+      }
     }
-  }
 
-  @media screen and (min-width: @tablet-width) {
-    margin-bottom: 21px;
-  }
+    @media screen and (min-width: @tablet-width) {
+      margin-bottom: 21px;
+    }
 
-  @media screen and (min-width: @desktop-width) {
-    margin-left: 44px;
+    @media screen and (min-width: @desktop-width) {
+      margin-left: 44px;
+    }
   }
 
   &--mail {
@@ -34,7 +40,7 @@
       @media screen and (min-width: @tablet-width) {
         position: absolute;
         content: "";
-        width: 60px;
+        width: 62px;
         height: 60px;
         background-image: url("../img/icon-mail.svg");
         background-position: 50% 50%;
@@ -43,6 +49,11 @@
         top: 2px;
         right: 0;
         text-align: center;
+      }
+
+      @media screen and (min-width: @desktop-width) {
+        width: 60px;
+        background-position: 51% 45%;
       }
     }
 
@@ -57,12 +68,13 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-bottom: 14px;
 
   @media screen and (min-width: @tablet-width) {
     order: 3;
     margin-top: 15px;
+    padding-left: 20px;
   }
 }
 
@@ -71,7 +83,7 @@
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  width: 276px;
+  width: 279px;
   height: 59px;
   border: 2px solid #e5e5e5;
   padding-left: 19px;

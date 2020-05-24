@@ -50,7 +50,7 @@
 .comment-user--best p:nth-child(2) {
   @media screen and (min-width: @tablet-width) {
     order: 10;
-    margin-top: -12px;
+    margin-top: -6px;
     margin-left: 0;
   }
 }
@@ -74,12 +74,16 @@
   font-weight: 700;
   color: @blue-color;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding-top: 20px;
+  padding-top: 19px;
   margin-top: 0;
 
   @media screen and (min-width: @tablet-width) {
-    padding-top: 25px;
+    padding-top: 27px;
     padding-left: 9px;
+  }
+
+  @media screen and (min-width: @desktop-width) {
+    padding-top: 26px;
   }
 }
 
@@ -112,8 +116,8 @@
   font-size: 12px;
   text-transform: uppercase;
   color: @color-darkpink;
-  padding-bottom: 19px;
-  padding-left: 3px;
+  padding-bottom: 22px;
+  padding-left: 1px;
   position: relative;
   display: flex;
   align-items: center;
@@ -124,7 +128,7 @@
     content: "";
     width: 13px;
     height: 12px;
-    margin-right: 16px;
+    margin-right: 18px;
 
     @media screen and (min-width: @tablet-width) {
       order: 2;
@@ -135,13 +139,14 @@
 
   @media screen and (min-width: @tablet-width) {
     padding-left: 9px;
+    padding-bottom: 13px;
     margin-top: auto;
     justify-content: space-between;
   }
 
   @media screen and (min-width: @desktop-width) {
     padding-top: 6px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
   }
 
   &--best {

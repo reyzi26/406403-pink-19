@@ -47,7 +47,7 @@
         <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
-        <ul class="main-nav__list site-list visually-hidden">
+        <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
             <li class="site-list__item site-list__item--active"><a href="form.html">Конкурс</a></li>
@@ -112,21 +112,24 @@
               <ul class="programm-user__list">
                 <li>
                   <label class="programm-user__item os-use">
-                    <input class="os-use__user" type="radio" name="status" value="os-ios" checked>
+                    <input class="os-use__input" type="radio" name="status" value="os-ios" checked>
+                    <span class="os-use__box"></span>
                     <span class="os-use__text">Pink для iOS</span>
                   </label>
                 </li>
 
                 <li>
                   <label class="programm-user__item os-use">
-                    <input class="os-use__user" type="radio" name="status" value="os-android">
+                    <input class="os-use__input" type="radio" name="status" value="os-android">
+                    <span class="os-use__box"></span>
                     <span class="os-use__text">Pink на Android</span>
                   </label>
                 </li>
 
                 <li>
                   <label class="programm-user__item os-use">
-                    <input class="os-use__user" type="radio" name="status" value="os-windows">
+                    <input class="os-use__input" type="radio" name="status" value="os-windows">
+                    <span class="os-use__box"></span>
                     <span class="os-use__text">Windows Phone</span>
                   </label>
                 </li>
@@ -142,8 +145,8 @@
           <fieldset>
             <legend class="contacts-user__info">Контактная информация</legend>
             <ul class="contacts-user__list">
-              <li class="contacts-user__item contacts-item">
-                <label class="contacts-item__title">Номер телефона</label>
+              <li class="contacts-user__item contacts-item contacts-item--number">
+                <label class="contacts-item__title contacts-item__title--number">Номер телефона</label>
                 <input type="tel" name="number" class="contacts-item__text contacts-item__text--number" placeholder="Номер, пожалуйста">
               </li>
 
@@ -171,7 +174,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_1" class="checkbox-achievement__box checkbox-achievement__box--on" checked>
+                  <input type="checkbox" name="achievement_1" class="checkbox-achievement__input checkbox-achievement__input--on" checked>
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Сделал селфи с акулой
                   </span>
@@ -180,7 +184,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_2" class="checkbox-achievement__box checkbox-achievement__box--on" checked>
+                  <input type="checkbox" name="achievement_2" class="checkbox-achievement__input checkbox-achievement__input--on" checked>
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Обгорел на пляже
                   </span>
@@ -189,7 +194,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_3" class="checkbox-achievement__box">
+                  <input type="checkbox" name="achievement_3" class="checkbox-achievement__input">
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Видел Чака Норриса
                   </span>
@@ -198,7 +204,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_4" class="checkbox-achievement__box">
+                  <input type="checkbox" name="achievement_4" class="checkbox-achievement__input">
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Накупил сувениров
                   </span>
@@ -207,7 +214,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_5" class="checkbox-achievement__box checkbox-achievement__box--on" checked>
+                  <input type="checkbox" name="achievement_5" class="checkbox-achievement__input checkbox-achievement__input--on" checked>
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Удержал башню
                   </span>
@@ -216,7 +224,8 @@
 
               <li class="user-achievements__item">
                 <label class="checkbox-achievement">
-                  <input type="checkbox" name="achievement_6" class="checkbox-achievement__box">
+                  <input type="checkbox" name="achievement_6" class="checkbox-achievement__input">
+                  <span class="checkbox-achievement__box"></span>
                   <span class="checkbox-achievement__text">
                     Разгромил отель
                   </span>
